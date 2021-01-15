@@ -9,7 +9,8 @@
     "Write-Output \"[Settings]\" | Out-File \"$dir\\sakura.exe.ini\"",
     "Write-Output \"MultiUser=1\" | Out-File -Append \"$dir\\sakura.exe.ini\"",
     "Write-Output \"UserRootFolder=0\" | Out-File -Append \"$dir\\sakura.exe.ini\"",
-    "Write-Output \"UserSubFolder=sakura\" | Out-File -Append \"$dir\\sakura.exe.ini\""
+    "Write-Output \"UserSubFolder=sakura\" | Out-File -Append \"$dir\\sakura.exe.ini\"",
+    "Start-Process -FilePath \"$dir\\sakura.exe\" -ArgumentList \"-NOWIN\""
   ],
   "bin": "sakura.exe",
   "shortcuts": [
