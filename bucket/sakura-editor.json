@@ -5,6 +5,12 @@
   "license": "Freeware",
   "url": "https://github.com/sakura-editor/sakura/releases/download/v2.4.1/sakura-tag-v2.4.1-build2849-ee8234f-Win32-Release-Exe.zip",
   "hash": "4a906b211af88de6112e0cd636e867a2699202e36731140d9520b91b6649b319",
+  "post_install": [
+    "Write-Output \"[Settings]\" | Out-File \"$dir\\sakura.exe.ini\"",
+    "Write-Output \"MultiUser=1\" | Out-File -Append \"$dir\\sakura.exe.ini\"",
+    "Write-Output \"UserRootFolder=0\" | Out-File -Append \"$dir\\sakura.exe.ini\"",
+    "Write-Output \"UserSubFolder=sakura\" | Out-File -Append \"$dir\\sakura.exe.ini\""
+  ],
   "bin": "sakura.exe",
   "shortcuts": [
     [
