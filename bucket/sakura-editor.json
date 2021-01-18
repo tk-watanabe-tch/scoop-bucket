@@ -10,8 +10,8 @@
   ],
   "hash": [
     "4a906b211af88de6112e0cd636e867a2699202e36731140d9520b91b6649b319",
-    "9f92039bf63b3ba3ccab33d674721aa5d0c6e294c45a87b94e9b328ff25a99f7",
-    "ec3bf77ddf1549549459f6313a78701fd95aca6d0f267bf14f7d194b922d0b77"
+    "def0597bc84cc5cd0014c1239f61f04eed99cce0016e40a7c4c8abcf07e80dd1",
+    "d6a585b6ead5e89f677cb0867276be0ddc9cf78199ae9340fdd506f642c61cb3"
   ],
   "post_install": [
     "Write-Output \"[Settings]\" | Out-File \"$dir\\sakura.exe.ini\"",
