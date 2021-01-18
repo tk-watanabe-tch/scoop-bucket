@@ -8,13 +8,33 @@
     "https://raw.githubusercontent.com/tk-watanabe-tch/scoop-bucket/main/scripts/sakura-install-context.reg",
     "https://raw.githubusercontent.com/tk-watanabe-tch/scoop-bucket/main/scripts/sakura-uninstall-context.reg"
   ],
-  "hash": "4a906b211af88de6112e0cd636e867a2699202e36731140d9520b91b6649b319",
+  "hash": [
+    "4a906b211af88de6112e0cd636e867a2699202e36731140d9520b91b6649b319",
+    "9f92039bf63b3ba3ccab33d674721aa5d0c6e294c45a87b94e9b328ff25a99f7",
+    "ec3bf77ddf1549549459f6313a78701fd95aca6d0f267bf14f7d194b922d0b77"
+  ],
   "post_install": [
     "Write-Output \"[Settings]\" | Out-File \"$dir\\sakura.exe.ini\"",
     "Write-Output \"MultiUser=1\" | Out-File -Append \"$dir\\sakura.exe.ini\"",
     "Write-Output \"UserRootFolder=0\" | Out-File -Append \"$dir\\sakura.exe.ini\"",
     "Write-Output \"UserSubFolder=sakura\" | Out-File -Append \"$dir\\sakura.exe.ini\"",
-    "Start-Process -FilePath \"$dir\\sakura.exe\" -ArgumentList \"-NOWIN\""
+    "Start-Process -FilePath \"$dir\\sakura.exe\" -ArgumentList \"-NOWIN\"",
+    "if (Test-Path \"$dir\\sakura-install-context.reg\") {",
+    "  $sakurapath = \"$dir\\sakura.exe\".Replace('\\', '\\\\')",
+    "  $content = Get-Content \"$dir\\sakura-install-context.reg\"",
+    "  $content = $content.Replace('$sakura', $sakurapath)",
+    "  if ($global) {",
+    "    $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
+    "  }",
+    "  $content | Set-Content -Path \"$dir\\sakura-install-context.reg\"",
+    "}",
+    "if (Test-Path \"$dir\\sakura-uninstall-context.reg\") {",
+    "  $content = Get-Content \"$dir\\sakura-uninstall-context.reg\"",
+    "  if ($global) {",
+    "    $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
+    "  }",
+    "  $content | Set-Content -Path \"$dir\\sakura-uninstall-context.reg\"",
+    "}"
   ],
   "bin": "sakura.exe",
   "shortcuts": [
