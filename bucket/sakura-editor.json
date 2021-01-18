@@ -3,6 +3,7 @@
   "description": "Japanese text editor for MS Windows",
   "homepage": "https://sakura-editor.github.io/",
   "license": "Freeware",
+  "notes": "Add SAKURA Editor as a context menu option by running: \"$dir\\sakura-install-context.reg\"",
   "url": [
     "https://github.com/sakura-editor/sakura/releases/download/v2.4.1/sakura-tag-v2.4.1-build2849-ee8234f-Win32-Release-Exe.zip",
     "https://raw.githubusercontent.com/tk-watanabe-tch/scoop-bucket/main/scripts/sakura-install-context.reg",
