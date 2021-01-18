@@ -1,0 +1,15 @@
+version: "3.6"
+
+services:
+  main:
+    image: r15ch13/excavator:latest
+    deploy:
+      mode: global
+    command: bash -x /run.sh
+    volumes:
+      - ./.ssh:/root/.ssh
+      - ./run.sh:/run.sh
+    environment:
+      GIT_USERNAME: "tk-watanabe-tch"
+      GIT_EMAIL: "62279913+tk-watanabe-tch@users.noreply.github.com"
+      BUCKET: "tk-watanabe-tch/scoop-bucket"
