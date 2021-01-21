@@ -1,6 +1,6 @@
 param(
     # overwrite upstream param
-    [String]$upstream = "tk-watanabe-tch/scoop-bucket:main"
+    [String]$upstream = "tk-watanabe-tch/scoop-bucket:master"
 )
 
 if(!$env:SCOOP_HOME) { $env:SCOOP_HOME = resolve-path (split-path (split-path (scoop which scoop))) }
