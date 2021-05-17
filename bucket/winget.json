@@ -1,0 +1,35 @@
+{
+    "version": "0.3.11201-preview",
+    "description": "Windows Package Manager CLI (aka winget)",
+    "homepage": "https://github.com/microsoft/winget-cli",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/microsoft/winget-cli/blob/master/LICENSE"
+    },
+    "url": "https://github.com/microsoft/winget-cli/releases/download/v-0.3.11201-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle#/winget.appxbundle",
+    "hash": "859999dfd7faae1fb9ac56760736301950c937ea5ba4f66387ceee7a76cb3d00",
+    "installer": {
+        "script": [
+            "if ((Get-Host).Version.Majar -gt 5 -and (Get-Module | Where-Object Name -eq \"APPX\").Length -eq 0) {",
+            "  Import-Module APPX -usewindowspowershell",
+            "}",
+            "Add-AppxPackage -Path \"$dir\\winget.appxbundle\""
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if ((Get-Host).Version.Majar -gt 5 -and (Get-Module | Where-Object Name -eq \"APPX\").Length -eq 0) {",
+            "  Import-Module APPX -usewindowspowershell",
+            "}",
+            "Get-AppxPackage -Name Microsoft.Winget.Source | Remove-AppxPackage",
+            "Get-AppxPackage -Name Microsoft.DesktopAppInstaller | Remove-AppxPackage"
+        ]
+    },
+    "checkver": {
+        "url": "https://github.com/microsoft/winget-cli/releases",
+        "regex": "tag/v-([\\w.-]+)\""
+    },
+    "autoupdate": {
+        "url": "https://github.com/microsoft/winget-cli/releases/download/v-$version/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle#/winget.appxbundle"
+    }
+}
