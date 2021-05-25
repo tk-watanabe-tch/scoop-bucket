@@ -10,7 +10,7 @@
     "hash": "d2e161077084c1c2bf0e42836c0df5975ef424b0e5cebd83db301361fd26f05a",
     "installer": {
         "script": [
-            "if ((Get-Host).Version.Majar -gt 5 -and (Get-Module | Where-Object Name -eq \"APPX\").Length -eq 0) {",
+            "if ((Get-Host).Version.Major -gt 5 -and (Get-Module | Where-Object Name -eq \"APPX\").Length -eq 0) {",
             "  Import-Module APPX -usewindowspowershell",
             "}",
             "Add-AppxPackage -Path \"$dir\\winget.appxbundle\""
@@ -18,7 +18,7 @@
     },
     "uninstaller": {
         "script": [
-            "if ((Get-Host).Version.Majar -gt 5 -and (Get-Module | Where-Object Name -eq \"APPX\").Length -eq 0) {",
+            "if ((Get-Host).Version.Major -gt 5 -and (Get-Module | Where-Object Name -eq \"APPX\").Length -eq 0) {",
             "  Import-Module APPX -usewindowspowershell",
             "}",
             "Get-AppxPackage -Name Microsoft.Winget.Source | Remove-AppxPackage",
