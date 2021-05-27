@@ -1,13 +1,13 @@
 {
-    "version": "0.4.11391-preview",
+    "version": "1.0.11451",
     "description": "Windows Package Manager CLI (aka winget)",
     "homepage": "https://github.com/microsoft/winget-cli",
     "license": {
         "identifier": "MIT",
         "url": "https://github.com/microsoft/winget-cli/blob/master/LICENSE"
     },
-    "url": "https://github.com/microsoft/winget-cli/releases/download/v-0.4.11391-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle#/winget.appxbundle",
-    "hash": "d2e161077084c1c2bf0e42836c0df5975ef424b0e5cebd83db301361fd26f05a",
+    "url": "https://github.com/microsoft/winget-cli/releases/download/v1.0.11451/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle#/winget.appxbundle",
+    "hash": "cee94db96eb0995ba36faa3d6417ca908c368a2829d4f24791d96d83bde6f724",
     "installer": {
         "script": [
             "if ((Get-Host).Version.Major -gt 5 -and (Get-Module | Where-Object Name -eq \"APPX\").Length -eq 0) {",
