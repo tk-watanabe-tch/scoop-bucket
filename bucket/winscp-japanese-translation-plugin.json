@@ -1,21 +1,21 @@
 {
-  "version": "5.17.10",
-  "description": "The Japanese translation plugin for WinSCP",
-  "homepage": "https://winscp.net",
-  "license": "GPL-3.0-or-later",
-  "url": "https://winscp.net/translations/dll/5.17.10/jp.zip",
-  "hash": "610dd5c15f48eebf87f236ea9aa8d01d854ea4004ce220f9e506e73edda619bc",
-  "post_install": [
-    "$winscpPath = \"$scoopdir\\apps\\winscp\\$version\"",
-    "if (Test-Path $winscpPath) {",
-    "  Copy-Item -LiteralPath \"$original_dir\\WinSCP.jp\" -Destination \"$winscpPath\\WinSCP.jp\" -Force",
-    "}"
-  ],
-  "checkver": {
-    "url": "https://winscp.net/eng/downloads.php",
-    "regex": "WinSCP-([\\d.]+)-Portable\\.zip"
-  },
-  "autoupdate": {
-    "url": "https://winscp.net/translations/dll/$version/jp.zip"
-  }
+    "version": "5.19",
+    "description": "The Japanese translation plugin for WinSCP",
+    "homepage": "https://winscp.net",
+    "license": "GPL-3.0-or-later",
+    "url": "https://winscp.net/translations/dll/5.19/jp.zip",
+    "hash": "57dbd5fcc4891f938f96302028a978f7cc3b3c9c97bd4ecdb4a9ed8c773271f0",
+    "post_install": [
+        "$winscpPath = \"$scoopdir\\apps\\winscp\\$version\"",
+        "if (Test-Path $winscpPath) {",
+        "  Copy-Item -LiteralPath \"$original_dir\\WinSCP.jp\" -Destination \"$winscpPath\\WinSCP.jp\" -Force",
+        "}"
+    ],
+    "checkver": {
+        "url": "https://winscp.net/eng/downloads.php",
+        "regex": "WinSCP-([\\d.]+)-Portable\\.zip"
+    },
+    "autoupdate": {
+        "url": "https://winscp.net/translations/dll/$version/jp.zip"
+    }
 }
