@@ -1,16 +1,16 @@
 {
-    "version": "2.16.0",
+    "version": "2.16.1",
     "description": "SQL Development Environment & ER Diagram Tool (Read Only Version)",
     "homepage": "https://a5m2.mmatsubara.com/",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://a5m2.mmatsubara.com/download/a5m2_2.16.0_x64_r.zip",
-            "hash": "317ed3e6a82b39d12b76694f22635ea7d5164514ee5bb6b325e3af5d0bf4f86a"
+            "url": "https://a5m2.mmatsubara.com/download/a5m2_2.16.1_x64_r.zip",
+            "hash": "6ce1a79d3d40b291b764b3225320b255e9f2d9782366096414e003ea8a1d52a6"
         },
         "32bit": {
-            "url": "https://a5m2.mmatsubara.com/download/a5m2_2.16.0_x86_r.zip",
-            "hash": "bb77e95a08d816c82bf254e0152d0ef77dace63943287d3f7431810a19ac8856"
+            "url": "https://a5m2.mmatsubara.com/download/a5m2_2.16.1_x86_r.zip",
+            "hash": "3aad93f6da21b611cb9bb56084fd0986fc6b63ccdd314c71f4ecc74420b83424"
         }
     },
     "bin": "A5M2.exe",
