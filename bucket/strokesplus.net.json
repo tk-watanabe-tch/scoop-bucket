@@ -1,10 +1,10 @@
 {
-    "version": "0.5.4.5",
+    "version": "0.5.4.6",
     "description": "Mouse Gestures and More for Windows",
     "homepage": "https://www.strokesplus.net/",
     "license": "Freeware",
-    "url": "https://www.strokesplus.net/files/StrokesPlus.net_Portable_0.5.4.5.zip",
-    "hash": "3976f69f0dae4855e2960cb4f86cd69f0522d84ec02343f7a71ed780cbb46c70",
+    "url": "https://www.strokesplus.net/files/StrokesPlus.net_Portable_0.5.4.6.zip",
+    "hash": "9749ca46335cfd03f3cce23de6aeed9a32d3514c5cbf461ced4201bb689eff8b",
     "bin": "StrokesPlus.net.exe",
     "shortcuts": [
         [
