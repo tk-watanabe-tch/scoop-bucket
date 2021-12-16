@@ -13,6 +13,11 @@
             "hash": "76887cb86fd9f79b2e653b652f8fd7b0670423ec45d17790c553ac955fbbd7fd"
         }
     },
+    "pre_install": [
+        "if(!(Test-Path(\"$persist_dir\"))) { New-Item \"$persist_dir\" -type directory | Out-Null }",
+        "if(!(Test-Path(\"$persist_dir\\BunBackup.ini\"))) { New-Item \"$persist_dir\\BunBackup.ini\" -type file | Out-Null }",
+        "if(!(Test-Path(\"$persist_dir\\バックアップ.lbk\"))) { New-Item \"$persist_dir\\バックアップ.lbk\" -type file | Out-Null }"
+    ],
     "bin": "BunBackup.exe",
     "persist": [
         "BunBackup.ini",
