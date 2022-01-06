@@ -1,10 +1,10 @@
 {
-    "version": "2021.12.14.0",
+    "version": "2022.01.06.0",
     "description": "It collects and lists the computer obtainable information on the network.",
     "homepage": "https://www.e-realize.com/netenum5.html",
     "license": "Freeware",
-    "url": "https://www.e-realize.com/netenum20211214.zip",
-    "hash": "8b769c428587143d78930fbd01d79347439e6adc0fbaf21d22fb640f24e0cc48",
+    "url": "https://www.e-realize.com/netenum20220106.zip",
+    "hash": "6949327323d19fa1c3dac8ffddad539dc60e34511c2c2cba1300f9bb000b6b6e",
     "pre_install": [
         "if(!(Test-Path(\"$persist_dir\"))) { New-Item \"$persist_dir\" -type directory | Out-Null }",
         "if(!(Test-Path(\"$persist_dir\\netenum5.ini\"))) { New-Item \"$persist_dir\\netenum5.ini\" -type file | Out-Null }"
