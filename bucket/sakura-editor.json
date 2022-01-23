@@ -14,11 +14,11 @@
     "def0597bc84cc5cd0014c1239f61f04eed99cce0016e40a7c4c8abcf07e80dd1",
     "d6a585b6ead5e89f677cb0867276be0ddc9cf78199ae9e40fdd506f642c61cb3"
   ],
+  "pre_install": [
+    "if(!(Test-Path(\"$persist_dir\"))) { New-Item \"$persist_dir\" -type directory | Out-Null }",
+    "if(!(Test-Path(\"$persist_dir\\sakura.ini\"))) { New-Item \"$persist_dir\\sakura.ini\" -type file | Out-Null }"
+],
   "post_install": [
-    "Write-Output \"[Settings]\" | Out-File \"$dir\\sakura.exe.ini\"",
-    "Write-Output \"MultiUser=1\" | Out-File -Append \"$dir\\sakura.exe.ini\"",
-    "Write-Output \"UserRootFolder=0\" | Out-File -Append \"$dir\\sakura.exe.ini\"",
-    "Write-Output \"UserSubFolder=sakura\" | Out-File -Append \"$dir\\sakura.exe.ini\"",
     "if (Test-Path \"$dir\\sakura-install-context.reg\") {",
     "  $sakurapath = \"$dir\\sakura.exe\".Replace('\\', '\\\\')",
     "  $content = Get-Content \"$dir\\sakura-install-context.reg\"",
@@ -37,6 +37,7 @@
     "}"
   ],
   "bin": "sakura.exe",
+  "persist": "sakura.ini",
   "shortcuts": [
     [
       "sakura.exe",
