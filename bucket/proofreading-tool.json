@@ -1,10 +1,10 @@
 {
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "GUI tool for textlinting.",
     "homepage": "https://gecko655.hatenablog.com/entry/proofreading-tool",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/gecko655/proofreading-tool/releases/download/v1.0.7/proofreading-tool-1.0.7-win.zip",
-    "hash": "a9cd831f1fa2b75935a9c9d4ace13af7b71502fe74a922c72c4f36a6ae96fc15",
+    "url": "https://github.com/gecko655/proofreading-tool/releases/download/v1.0.8/proofreading-tool-1.0.8-win.zip",
+    "hash": "a75e8ba6bfe741d6d63663aa8a943abe10c0e48757f48d15e3b1bb423d064026",
     "bin": "文書校正ツール.exe",
     "shortcuts": [
         [
