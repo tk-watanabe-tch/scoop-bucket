@@ -1,10 +1,10 @@
 {
-    "version": "0.5.6.5",
+    "version": "0.5.6.6",
     "description": "Mouse Gestures and More for Windows",
     "homepage": "https://www.strokesplus.net/",
     "license": "Freeware",
-    "url": "https://www.strokesplus.net/files/StrokesPlus.net_Portable_0.5.6.5.zip",
-    "hash": "429fee89e5eb746919daf3d9315a6080526bdf0f053dc78892200082af56b64c",
+    "url": "https://www.strokesplus.net/files/StrokesPlus.net_Portable_0.5.6.6.zip",
+    "hash": "b1c82604910676bc7bb3cd43b02a278bc01f51b212a6c180aab59f0a6ec86e9f",
     "pre_install": [
         "if(!(Test-Path(\"$persist_dir\"))) { New-Item \"$persist_dir\" -type directory | Out-Null }",
         "if(!(Test-Path(\"$persist_dir\\StrokesPlus.net.bin\"))) { New-Item \"$persist_dir\\StrokesPlus.net.bin\" -type file | Out-Null }"
