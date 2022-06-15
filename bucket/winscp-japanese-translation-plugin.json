@@ -1,10 +1,10 @@
 {
-    "version": "5.19.6",
+    "version": "5.21",
     "description": "The Japanese translation plugin for WinSCP",
     "homepage": "https://winscp.net",
     "license": "GPL-3.0-or-later",
-    "url": "https://winscp.net/translations/dll/5.19.6/jp.zip",
-    "hash": "d71b174073a65c4a424aec581b77c91cfc22198cbdb13eb30d166dfc4c90c494",
+    "url": "https://winscp.net/translations/dll/5.21/jp.zip",
+    "hash": "12f42ba8d91223178aed4e380d170850368ce48268517f3ab155764bcc69ef40",
     "post_install": [
         "$winscpPath = \"$scoopdir\\apps\\winscp\\$version\"",
         "if (Test-Path $winscpPath) {",
