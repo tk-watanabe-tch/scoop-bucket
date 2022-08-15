@@ -1,8 +1,8 @@
 {
     "version": "2.7.0",
     "license": {
-        "identifier": "Freeware",
-        "url": "https://github.com/yuru7/HackGen/blob/master/LICENSE.txt"
+        "identifier": "OFL-1.1",
+        "url": "https://github.com/yuru7/HackGen/blob/master/LICENSE"
     },
     "description": "HackGen is a composite font of Hack and GenJyuu-Gothic.",
     "homepage": "https://github.com/yuru7/HackGen",
