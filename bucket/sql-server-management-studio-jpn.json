@@ -1,10 +1,10 @@
 {
-    "version": "15.0.18424.0",
+    "version": "19.0.20196.0",
     "description": "Integrated environment for SQL Server infrastructure administration and T-SQL development.",
     "homepage": "https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms",
     "license": "Freeware",
     "url": "https://aka.ms/ssmsfullsetup?clcid=0x411#/SSMS-Setup-JPN.exe",
-    "hash": "bbad01f1dbb0e4a11f77ef84e500d079fe5208ecda3597e5c0eb176d1a780958",
+    "hash": "56f887d5dcbb1e667f9a18eaf2b4a86d60735870f918f56d8bc40dd7960e2dc1",
     "installer": {
         "script": [
             "$log = \"$dir\\SSMS-Setup-JPN-Install.log\"",
