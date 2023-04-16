@@ -45,10 +45,10 @@
     ]
   ],
   "checkver": {
-    "url": "https://github.com/sakura-editor/sakura/releases/latest",
-    "re": "sakura-tag-v(?<version>[\\d.]+)-build(?<build>[\\d]{4})-(?<github>[0-9a-z]+)-Win32-Release-Exe.zip"
+        "url": "https://api.github.com/repos/sakura-editor/sakura/releases/latest",
+        "re": "\"browser_download_url\": *\"(?<url>https://github.com/sakura-editor/sakura/releases/download/v([0-9.]+)/.+-Release-Exe.zip)\""
   },
   "autoupdate": {
-    "url": "https://github.com/sakura-editor/sakura/releases/download/v$matchVersion/sakura-tag-v$matchVersion-build$matchBuild-$matchGithub-Win32-Release-Exe.zip"
+    "url": "$matchUrl"
   }
 }
