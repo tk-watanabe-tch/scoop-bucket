@@ -30,8 +30,7 @@
         "config"
     ],
     "checkver": {
-        "url": "https://github.com/tablacus/TablacusExplorer/releases/latest",
-        "re": "<a href=\"/tablacus/TablacusExplorer/releases/download/(?<version>[\\d.]+)/te(?<file>[\\d]{6}).zip\""
+        "re": "href=\"https://github.com/tablacus/TablacusExplorer/releases/download/(?<version>[\\d.]+)/te(?<file>[\\d]{6}).zip\""
     },
     "autoupdate": {
         "url": "https://github.com/tablacus/TablacusExplorer/releases/download/$matchVersion/te$matchFile.zip"
