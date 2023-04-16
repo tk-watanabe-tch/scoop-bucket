@@ -1,14 +1,14 @@
 {
-    "version": "2.6.4",
+    "version": "2.8.0",
     "license": {
         "identifier": "OFL-1.1",
         "url": "https://github.com/yuru7/HackGen/blob/master/LICENSE"
     },
     "description": "HackGenNerd is a composite font of Hack, GenJyuu-Gothic and Nerd Fonts.",
     "homepage": "https://github.com/yuru7/HackGen",
-    "url": "https://github.com/yuru7/HackGen/releases/download/v2.6.4/HackGenNerd_v2.6.4.zip",
-    "hash": "e7791bf80b797d270ff97ad63f41f37014bfe4f7735c9d3573ae69bee04ced5e",
-    "extract_dir": "HackGenNerd_v2.6.4",
+    "url": "https://github.com/yuru7/HackGen/releases/download/v2.8.0/HackGen_NF_v2.8.0.zip",
+    "hash": "25cdd1487cc46df384d32c041303b4a04541fd61d0b973e8bb38fd1a3de65eb1",
+    "extract_dir": "HackGen_NF_v2.8.0",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/yuru7/HackGen/releases/download/v$version/HackGen_NF_v$version.zip",
